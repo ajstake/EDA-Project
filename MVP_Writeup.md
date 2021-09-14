@@ -1,1 +1,2 @@
-
+# Early Findings
+insert graphs ![](
