@@ -8,4 +8,22 @@ The goal of WTWY and this exploratory data analysis is to increase the overall n
 
 ## Design
 
-This project is looking to 
+This project is looking to find the highest number of points of contact while ensuring that the people encountered are more likely to provide their email and attend the WTWY gala. In order to achieve this, I focused on exploring the number of daily exits for the 5 stations with the highest overall traffic. By using exit data we can reduce the number of people who will be in a rush and more likely to pass by the survey teams, and by using the stations with the most traffic we are able increase the number of contact points and the subsequent emails gathered, gala attendance, and awareness of the issues women in technology sectors face. Another point to consider is the location of these stations to monuments or historical sites, as their proximity to these sites could increase the number of tourists who are unlikely to be receptive to the survey teams. 
+
+## Data
+
+The primary source of data used is the MTA turnstile transit data that is freely available covering the months of June 2021 through August 2021. Some features of this data include the system location information of each turnstile, their associated linename, as well as the day and time the data was recorded for each turnstile. An additional source of data is the use of google maps to view what is in the immediate vicinity of each station. 
+
+## Algorithms
+
+asd
+
+## Tools
+   - SQLite and DB Browser for SQLite for initial data exploration and ingestion
+   - SQLalchemy for querying the database through Python
+   - Numpy and Pandas for exploratory data analysis
+   - Matplotlib and Seaborn for plotting and data visualization
+
+## Communication
+
+The data is presented through the ![slides]() and ![figures](https://github.com/ajstake/EDA-Project/tree/main/figures) provided
