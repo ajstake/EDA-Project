@@ -16,7 +16,8 @@ The primary source of data used is the MTA turnstile transit data that is freely
 
 ## Algorithms
 
-Data was explored initially using SQLAlchemy queries, then through pandas. The MTA data was 
+Data was explored initially using SQLAlchemy queries, then through pandas. The MTA data was sorted first by Control Area(CA), Unit, SCP, Station, and Date_time, with the Date_time group being created during ingestion through a function that also gathered the data into a csv. Duplicates were then dropped based on duplicate counts of entry data, and sorted again by exit data counts to ensure all duplicates were removed. There were instances where the exit and entry data both were being counted in reverse, and cleaned using a function that would also account for extreme values that are outside the norm to create a count of daily entries and exits for each day. The IQR was then found for the exits and used to discover outliers in the data and remove them. 
+Data was aggregated by CA, Unit, SCP, and Station with a sum of all the daily entries and exits to be plotted onto a bar chart to determine the 10 most trafficked stations. This data was then used in tandem with the creation of a day_of_week_number column to create and plot the average number of daily exits by day for the 5 most trafficked stations. 
 
 ## Tools
    - SQLite and DB Browser for SQLite for initial data exploration and ingestion
@@ -26,4 +27,4 @@ Data was explored initially using SQLAlchemy queries, then through pandas. The M
 
 ## Communication
 
-The data is presented through the ![slides]() and ![figures](https://github.com/ajstake/EDA-Project/tree/main/figures) provided
+The data is presented through the ![slides](https://github.com/ajstake/EDA-Project/blob/main/EDA_Final_Presentation.pdf) and ![figures](https://github.com/ajstake/EDA-Project/tree/main/figures) provided
