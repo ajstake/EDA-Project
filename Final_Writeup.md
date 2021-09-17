@@ -16,7 +16,7 @@ The primary source of data used is the MTA turnstile transit data that is freely
 
 ## Algorithms
 
-asd
+Data was explored initially using SQLAlchemy queries, then through pandas. The MTA data was 
 
 ## Tools
    - SQLite and DB Browser for SQLite for initial data exploration and ingestion
