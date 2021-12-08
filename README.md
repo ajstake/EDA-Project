@@ -8,3 +8,4 @@ All code for data gathering, cleaning, exploration, and visualization can be fou
 
 ## Results Presentation
 
+The findings can be found [here](https://github.com/ajstake/EDA-Project/blob/main/Final_Writeup.md) and are presented [here](https://github.com/ajstake/EDA-Project/blob/main/EDA_Final_Presentation.pdf).
